@@ -7,3 +7,11 @@ for i in range(6):
 
 print("Name:", name)
 print("Marks:", marks)
+total = sum(marks)
+highest = max(marks)
+lowest = min(marks)
+average = (total - lowest) / 5
+print("Total:", total)
+print("Highest:", highest)
+print("Lowest:", lowest)
+print("Average (ignoring lowest):", average)
