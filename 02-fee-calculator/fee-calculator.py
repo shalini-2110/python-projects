@@ -14,3 +14,11 @@ if scholarship.lower() == "yes":
     print("Scholarship Discount:", discount)
 
 print("Total after scholarship:", total_fee)
+late = input("Is the payment late? (yes/no): ")
+
+if late.lower() == "yes":
+    late_fee = 100
+    total_fee = total_fee + late_fee
+    print("Late Fee Applied:", late_fee)
+
+print("Final Payable Amount:", total_fee)
