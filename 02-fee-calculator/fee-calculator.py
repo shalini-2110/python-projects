@@ -6,3 +6,11 @@ hostel = 8000
 total_fee = tuition + lab + bus + hostel
 
 print("Total Fee before discount:", total_fee)
+scholarship = input("Do you have a scholarship? (yes/no): ")
+
+if scholarship.lower() == "yes":
+    discount = total_fee * 15 / 100
+    total_fee = total_fee - discount
+    print("Scholarship Discount:", discount)
+
+print("Total after scholarship:", total_fee)
